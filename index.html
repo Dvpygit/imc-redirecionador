@@ -3,24 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <!-- 🔵 Metatags para preview no WhatsApp, Facebook, etc. -->
+
+  <!-- Preview em redes sociais -->
   <meta property="og:title" content="⚖️ Calculadora de IMC" />
-  <meta property="og:description" content="Informe seu peso e altura para saber seu IMC. Funciona direto no celular ou computador." />
-  <meta property="og:url" content="https://dvpy-calculadora-imc.hf.space" />
+  <meta property="og:description" content="Descubra seu IMC com facilidade. Clique em Iniciar para usar a calculadora online." />
   <meta property="og:image" content="https://i.imgur.com/mg8U0eY.png" />
+  <meta property="og:url" content="https://dvpy-calculadora-imc.hf.space" />
   <meta name="theme-color" content="#5fd36c" />
 
-  <title>Redirecionando para a Calculadora de IMC...</title>
+  <title>Calculadora de IMC</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #f6fdf7;
+      font-family: 'Segoe UI', sans-serif;
+      color: #2b2b2b;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 2em;
+      color: #4b4b4b;
+    }
+
+    .btn {
+      padding: 0.75em 2em;
+      font-size: 1rem;
+      background-color: #5fd36c;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #4bb653;
+    }
+
+    .info {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 2em;
+    }
+  </style>
 
   <script>
-    setTimeout(() => {
+    function iniciarApp() {
       window.location.href = "https://dvpy-calculadora-imc.hf.space";
-    }, 1000);
+    }
+
+    // Redirecionamento automático após 3 segundos
+    setTimeout(iniciarApp, 3000);
   </script>
 </head>
 <body>
-  <h1>Redirecionando para a Calculadora de IMC...</h1>
-  <p>Se não for redirecionado, <a href="https://dvpy-calculadora-imc.hf.space">clique aqui</a>.</p>
+  <h1>Calculadora de IMC</h1>
+  <p>Descubra seu Índice de Massa Corporal com praticidade e rapidez.</p>
+  <button class="btn" onclick="iniciarApp()">Iniciar</button>
+  <div class="info">Você será redirecionado automaticamente em instantes...</div>
 </body>
 </html>
