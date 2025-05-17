@@ -9,16 +9,16 @@
   <meta property="og:description" content="Descubra seu IMC com facilidade. Clique em Iniciar para usar a calculadora online." />
   <meta property="og:image" content="https://i.imgur.com/mg8U0eY.png" />
   <meta property="og:url" content="https://dvpy-calculadora-imc.hf.space" />
-  <meta name="theme-color" content="#5fd36c" />
+  <meta name="theme-color" content="#ff6600" />
 
   <title>Calculadora de IMC</title>
 
   <style>
     body {
       margin: 0;
-      background-color: #f6fdf7;
+      background-color: #2f2f2f; /* fundo escuro cinza */
       font-family: 'Segoe UI', sans-serif;
-      color: #2b2b2b;
+      color: #ffffff; /* texto branco */
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -35,46 +35,43 @@
     p {
       font-size: 1rem;
       margin-bottom: 2em;
-      color: #4b4b4b;
+      color: #ddd; /* cinza claro para o parágrafo */
     }
 
     .btn {
       padding: 0.75em 2em;
       font-size: 1rem;
-      background-color: #5fd36c;
+      background-color: #ff6600; /* laranja */
       color: white;
       border: none;
       border-radius: 12px;
       cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(255, 102, 0, 0.6);
       transition: background-color 0.3s ease;
     }
 
     .btn:hover {
-      background-color: #4bb653;
+      background-color: #e65500; /* laranja escuro */
     }
 
     .info {
       font-size: 0.9rem;
-      color: #888;
+      color: #aaa; /* cinza médio */
       margin-top: 2em;
     }
   </style>
 
-<script>
-  function iniciarApp() {
-    window.location.href = "https://dvpy-calculadora-imc.hf.space";
-  }
-
-  // Comentando o redirecionamento automático:
-  // setTimeout(iniciarApp, 3000);
-</script>
+  <script>
+    function iniciarApp() {
+      window.location.href = "https://dvpy-calculadora-imc.hf.space";
+    }
+  </script>
 
 </head>
 <body>
   <h1>Calculadora de IMC</h1>
   <p>Descubra seu Índice de Massa Corporal com praticidade e rapidez.</p>
   <button class="btn" onclick="iniciarApp()">Iniciar</button>
-  <div class="info">Você será redirecionado automaticamente em instantes...</div>
+  <div class="info">Clique em "Iniciar" para abrir a calculadora.</div>
 </body>
 </html>
